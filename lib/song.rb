@@ -32,11 +32,15 @@ class Song
   
   def self.find_by_name(name)
     #binding.pry
-    array = self.all              #self.all == Song.all == @@all?
-    array.each do |song_obj|      
-      if song_obj.name == name
-        return song_obj
-      end 
+    # array = Song.all              #self.all == Song.all == @@all?
+    # array.each do |song_obj|      
+    #   if song_obj.name == name
+    #     return song_obj
+    #   end 
+    # end 
+    
+    Song.all.select do ||
+    
     end 
     binding.pry 
     false
