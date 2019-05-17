@@ -49,7 +49,7 @@ class Song
   # end 
   
   def self.alphabetical 
-    Song.all.select |song|
+    Song.all.select do |song|
       binding.pry  
     end
   end 
