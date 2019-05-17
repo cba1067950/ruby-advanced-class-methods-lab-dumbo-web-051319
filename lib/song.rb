@@ -39,8 +39,7 @@ class Song
     #   end 
     # end 
     
-    Song.all.select do |song|
-    binding.pry 
+    if Song.all.select { |song| song.name == name } == 
     end 
     
     # false
