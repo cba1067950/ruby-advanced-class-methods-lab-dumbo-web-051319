@@ -49,7 +49,8 @@ class Song
   end 
   
   def self.alphabetical 
-    Song.all.sort
+    x = Song.all.sort
+    binding.pry 
   end 
   
   def self.new_from_filename
