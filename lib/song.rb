@@ -40,10 +40,10 @@ class Song
     # end 
     
     Song.all.select do ||
-    
-    end 
     binding.pry 
-    false
+    end 
+    
+    # false
   end 
   
   # def self.find_or_create_by_name(name)
