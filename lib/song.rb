@@ -28,7 +28,7 @@ class Song
     song = self.new_by_name(name) #or self.new_by_name(name)
     song.save                     #not Song.save << song
     song                          #Song.save overwrites array?
-    # binding.pry
+    binding.pry
   end 
   
   def self.find_by_name(name)
