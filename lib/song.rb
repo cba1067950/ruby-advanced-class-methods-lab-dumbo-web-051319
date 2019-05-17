@@ -32,7 +32,7 @@ class Song
   
   def self.find_by_name(name)
     # array = Song.all              #self.all == Song.all == @@all
-    Song.all.fetch() { |song| song.name == name } 
+    Song.all.select { |song| song.name == name } 
     
   end 
   
