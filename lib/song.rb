@@ -31,18 +31,9 @@ class Song
   end 
   
   def self.find_by_name(name)
-    #binding.pry
-    # array = Song.all              #self.all == Song.all == @@all?
-    # array.each do |song_obj|      
-    #   if song_obj.name == name
-    #     return song_obj
-    #   end 
-    # end 
+    # array = Song.all              #self.all == Song.all == @@all
+    Song.all.select { |song| song.name == name } 
     
-    if Song.all.select { |song| song.name == name } == 
-    end 
-    
-    # false
   end 
   
   # def self.find_or_create_by_name(name)
