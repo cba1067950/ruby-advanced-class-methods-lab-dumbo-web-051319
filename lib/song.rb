@@ -49,9 +49,8 @@ class Song
     filename = filename.split(" - ")
     song = Song.new
     song.name = filename[0]
-    song.artist_name = filename[1].chomp('.mp3'')
+    song.artist_name = filename[1].chomp('.mp3')
     song.save
-    binding.pry
     song
   end
   
