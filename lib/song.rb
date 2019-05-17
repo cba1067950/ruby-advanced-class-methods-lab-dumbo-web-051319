@@ -20,7 +20,8 @@ class Song
   
   def self.new_by_name(name)
     song = self.new       #or Song.create to add song to array
-    song.name = name 
+    binding.pry
+    @name = name 
     song
   end 
   
