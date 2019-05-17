@@ -50,8 +50,11 @@ class Song
     song = Song.new
     song.name = filename[1].chomp('.mp3')
     song.artist_name = filename[0]
-    song.save
     song
+  end
+  
+  def create_from_filename(filename)
+    @@all << Song.new_from_filename(filename)
   end
   
   def self.destroy_all 
