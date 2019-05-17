@@ -50,7 +50,7 @@ class Song
   
   def self.alphabetical 
     binding.pry
-    x = Song.all.sort
+    x = Song.all.sort {|x,y| x <=> y}
     binding.pry 
   end 
   
