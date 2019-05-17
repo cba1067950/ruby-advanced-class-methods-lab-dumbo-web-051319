@@ -43,10 +43,10 @@ class Song
     false
   end 
   
-  def self.find_or_create_by_name(name)
-    # binding.pry
-    Song.find_by_name(name) || Song.create_by_name(name)
-  end 
+  # def self.find_or_create_by_name(name)
+  #   # binding.pry
+  #   Song.find_by_name(name) || Song.create_by_name(name)
+  # end 
   
   def self.alphabetical 
     Song.all.select |song|
