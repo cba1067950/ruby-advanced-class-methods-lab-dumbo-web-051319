@@ -60,7 +60,6 @@ class Song
     song.name = filename[0]
     song.artist_name = filename[1]
     song.save
-    binding.pry
     song
   end
   
