@@ -54,6 +54,7 @@ class Song
   end
   
   def create_from_filename(filename)
+    binding.pry
     song = Song.new_from_filename(filename)
     binding.pry
   end
