@@ -24,24 +24,24 @@ class Song
     song
   end 
   
-  # def self.create_by_name(name)
-  #   song = self.new_by_name(name) #or self.new_by_name(name)
-  #   song.save                     #not Song.save << song
-  #   song                          #Song.save overwrites array?
-  #   # binding.pry
-  # end 
+  def self.create_by_name(name)
+    song = self.new_by_name(name) #or self.new_by_name(name)
+    song.save                     #not Song.save << song
+    song                          #Song.save overwrites array?
+    # binding.pry
+  end 
   
-  # def self.find_by_name(name)
-  #   #binding.pry
-  #   array = self.all              #self.all == Song.all == @@all?
-  #   array.each do |song_obj|      
-  #     if song_obj.name == name
-  #       return song_obj
-  #     end 
-  #   end 
-  #   #binding.pry 
-  #   false
-  # end 
+  def self.find_by_name(name)
+    #binding.pry
+    array = self.all              #self.all == Song.all == @@all?
+    array.each do |song_obj|      
+      if song_obj.name == name
+        return song_obj
+      end 
+    end 
+    #binding.pry 
+    false
+  end 
   
   # def self.find_or_create_by_name(name)
   #   # binding.pry
