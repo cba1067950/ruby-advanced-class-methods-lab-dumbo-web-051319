@@ -52,7 +52,6 @@ class Song
     Song.all.select |song|
       binding.pry  
     end
-  
   end 
   
   def self.new_from_filename
