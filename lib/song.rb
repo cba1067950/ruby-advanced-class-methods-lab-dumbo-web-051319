@@ -50,6 +50,7 @@ class Song
   
   def self.alphabetical 
     Song.all.select do |song|
+      Song.all
       binding.pry  
     end
   end 
