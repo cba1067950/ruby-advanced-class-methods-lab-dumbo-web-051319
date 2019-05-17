@@ -49,7 +49,7 @@ class Song
     filename = filename.split(" - ")
     song = Song.new
     song.name = filename[0]
-    song.artist_name = filename[1]
+    song.artist_name = filename[1].
     song.save
     binding.pry
     song
