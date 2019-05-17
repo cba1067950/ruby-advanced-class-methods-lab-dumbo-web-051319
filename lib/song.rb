@@ -39,7 +39,7 @@ class Song
     #   end 
     # end 
     
-    Song.all.select do ||
+    Song.all.select do |song|
     binding.pry 
     end 
     
