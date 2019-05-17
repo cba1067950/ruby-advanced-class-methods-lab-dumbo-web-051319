@@ -48,6 +48,10 @@ class Song
     Song.find_by_name(name) || Song.create_by_name(name)
   end 
   
+  def self.alphabetical 
+    Song.all.sort_by 
+  end 
+  
   def self.new_from_filename
     
   end
