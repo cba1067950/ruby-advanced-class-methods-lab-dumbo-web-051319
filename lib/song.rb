@@ -57,7 +57,7 @@ class Song
   def self.new_from_filename(filename)
     binding.pry 
     filename = filename.split(" - ")
-    song = Song.new()
+    song = Song.new
   end
   
   def self.destroy_all 
