@@ -53,10 +53,8 @@ class Song
     song
   end
   
-  def create_from_filename(filename)
-    binding.pry
-    song = Song.new_from_filename(filename)
-    binding.pry
+  def self.create_from_filename(filename)
+    @all = Song.new_from_filename(filename)
   end
   
   def self.destroy_all 
